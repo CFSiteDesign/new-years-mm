@@ -2,7 +2,6 @@ import { getAsset } from '@/lib/images'
 import { DanceFloor, Haze, Sparkle } from '@/components/PosterDecor'
 
 const madMonkeyLogo = getAsset('mad-monkey-logo-white.webp')
-const roundel = getAsset('mad-monkey-roundel.webp')
 const lockup = getAsset('nye-lockup-760.webp')
 const lockup1400 = getAsset('nye-lockup-1400.webp')
 
@@ -56,14 +55,11 @@ const FooterSection = () => {
       {/* footer proper */}
       <div className="border-t-2 border-foreground/15 py-9 md:py-12 px-4 md:px-12 bg-[#040910]">
         <div className="max-w-7xl mx-auto flex flex-col items-center gap-6 md:gap-8">
-          <div className="flex items-center gap-5 md:gap-7">
-            {roundel && <img src={roundel} alt="" aria-hidden="true" width={296} height={297} className="w-14 md:w-[72px]" />}
-            {madMonkeyLogo ? (
-              <img src={madMonkeyLogo} alt="Mad Monkey Hostels" width={640} height={186} className="w-36 md:w-48" />
-            ) : (
-              <span className="font-display uppercase text-2xl">Mad Monkey</span>
-            )}
-          </div>
+          {madMonkeyLogo ? (
+            <img src={madMonkeyLogo} alt="Mad Monkey Hostels" width={640} height={186} className="w-36 md:w-48" />
+          ) : (
+            <span className="font-display uppercase text-2xl">Mad Monkey</span>
+          )}
 
           <div className="flex flex-wrap justify-center gap-2 md:gap-4">
             {SOCIALS.map((link) => (

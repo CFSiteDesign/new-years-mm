@@ -15,9 +15,22 @@ const HeroSection = () => {
       <Haze className="left-[-10%] right-[-10%] top-[30%] h-[46%]" />
       <DanceFloor className="h-[30%]" tile={64} />
 
+      {/* way back to the main site: standard on every MM event page */}
+      <a
+        href="https://madmonkeyhostels.com"
+        className="absolute z-20 top-[22px] right-4 md:top-7 md:right-8 inline-flex items-center gap-1.5 md:gap-2 bg-background/50 backdrop-blur-sm white-border font-display uppercase text-[10px] md:text-sm px-3 py-2 md:px-5 md:py-2.5 hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors"
+      >
+        <svg viewBox="0 0 16 16" className="w-3 md:w-3.5" fill="none" stroke="currentColor" strokeWidth="2.4" aria-hidden="true">
+          <path d="M10 3 5 8l5 5" strokeLinecap="square" />
+        </svg>
+        Homepage
+      </a>
+
       <div className="relative z-10 w-full max-w-6xl flex flex-col items-center text-center">
         {madMonkeyLogo && (
-          <img src={madMonkeyLogo} alt="Mad Monkey Hostels" className="w-28 md:w-40 mb-2 md:mb-4" width={640} height={186} />
+          <div className="w-full flex justify-start sm:justify-center mb-3 sm:mb-2 md:mb-4">
+            <img src={madMonkeyLogo} alt="Mad Monkey Hostels" className="w-24 sm:w-28 md:w-40" width={640} height={186} />
+          </div>
         )}
 
         {/* the lockup, lifted straight off the poster */}
