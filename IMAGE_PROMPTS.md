@@ -14,8 +14,8 @@ Paste each prompt straight into Higgsfield (GPT Image 2), Nano Banana, Midjourne
 or similar, at **4:3**. Drop the result into `src/assets/` under the file name
 shown and the card swaps from the neon drawing to the photo by itself.
 
-Every card has a label in the top-left corner and a big number in the
-bottom-right, so both corners are kept quiet in the prompts.
+Every card has a label in the top-left corner, so the prompts keep the corners
+quiet.
 
 > **Status (17 Nov 2026):** cards 1, 2 and 3 (pub crawl version) are done and
 > live in the repo, centre-cropped from 1536x1024 to 960x720 webp. The boat

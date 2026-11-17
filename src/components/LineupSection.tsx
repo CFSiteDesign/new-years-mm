@@ -53,7 +53,7 @@ const TONE = {
   yellow: { text: 'text-bulb', glow: 'hsla(62, 95%, 75%, 0.55)', badge: 'bg-bulb text-marquee' },
 }
 
-const LineupCard = ({ card, index }: { card: Card; index: number }) => {
+const LineupCard = ({ card }: { card: Card }) => {
   const tone = TONE[card.tone]
   return (
     <article className="marquee-box marquee-sm p-5 md:p-7 flex flex-col group card-hover neon-shadow">
@@ -81,9 +81,6 @@ const LineupCard = ({ card, index }: { card: Card; index: number }) => {
         >
           {card.badge}
         </span>
-        <span className="absolute bottom-2 right-3 font-display text-foreground/30 text-3xl md:text-4xl">
-          {String(index + 1).padStart(2, '0')}
-        </span>
       </div>
 
       <h3 className="font-display uppercase text-2xl md:text-[1.9rem] mb-2 md:mb-3 text-foreground">{card.title}</h3>
@@ -107,8 +104,8 @@ const LineupSection = () => {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-7 md:gap-10">
-          {CARDS.map((card, i) => (
-            <LineupCard key={card.title} card={card} index={i} />
+          {CARDS.map((card) => (
+            <LineupCard key={card.title} card={card} />
           ))}
         </div>
       </div>
