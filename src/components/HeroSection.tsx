@@ -4,7 +4,7 @@ import { DanceFloor, Haze, LightBeam, NeonBeams, Sparkle } from '@/components/Po
 
 const lockup760 = getAsset('nye-lockup-760.webp')
 const lockup1400 = getAsset('nye-lockup-1400.webp')
-const sign = getAsset('dress-code-sign-360.webp')
+const sign = getAsset('dress-code-sign-380.webp')
 const roundel = getAsset('mad-monkey-roundel.webp')
 const madMonkeyLogo = getAsset('mad-monkey-logo-white.webp')
 
@@ -112,9 +112,9 @@ const HeroSection = () => {
           src={sign}
           alt=""
           aria-hidden="true"
-          width={360}
-          height={681}
-          className="hidden lg:block absolute left-0 bottom-0 z-[5] w-[11vw] max-w-[190px] select-none pointer-events-none"
+          width={380}
+          height={605}
+          className="hidden lg:block absolute left-[2.5vw] bottom-8 z-[5] w-[11vw] max-w-[190px] select-none pointer-events-none"
           style={{ filter: 'drop-shadow(0 10px 30px rgba(0,0,0,0.5))' }}
         />
       )}

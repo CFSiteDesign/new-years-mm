@@ -1,8 +1,8 @@
 import { getAsset } from '@/lib/images'
 import { Haze, Sparkle } from '@/components/PosterDecor'
 
-const sign634 = getAsset('dress-code-sign-634.webp')
-const sign360 = getAsset('dress-code-sign-360.webp')
+const sign720 = getAsset('dress-code-sign-720.webp')
+const sign380 = getAsset('dress-code-sign-380.webp')
 
 const STEPS = [
   {
@@ -26,15 +26,15 @@ const DressCodeSection = () => {
 
       <div className="relative z-10 max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-[0.85fr_1.15fr] gap-10 md:gap-16 items-center">
         <div className="relative flex justify-center lg:justify-start">
-          {sign634 && (
+          {sign720 && (
             <img
-              src={sign634}
-              srcSet={sign360 ? `${sign360} 360w, ${sign634} 634w` : undefined}
+              src={sign720}
+              srcSet={sign380 ? `${sign380} 380w, ${sign720} 720w` : undefined}
               sizes="(min-width: 1024px) 380px, 60vw"
               alt="A-frame sign reading Dec 31, dress code: white"
               loading="lazy"
-              width={634}
-              height={1200}
+              width={720}
+              height={1147}
               className="w-[60vw] max-w-[300px] lg:max-w-[380px] h-auto animate-float"
               style={{ filter: 'drop-shadow(0 24px 40px rgba(0,0,0,0.55))' }}
             />
