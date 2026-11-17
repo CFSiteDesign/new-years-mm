@@ -57,11 +57,9 @@ const DressCodeSection = () => {
           </p>
 
           <ol className="mt-8 md:mt-10 flex flex-col gap-4 md:gap-5">
-            {STEPS.map((step, i) => (
-              <li key={step.title} className="flex gap-4 md:gap-6 items-start bg-background/70 backdrop-blur-sm white-border border-foreground/15 p-4 md:p-6">
-                <span className="font-display text-neon text-3xl md:text-4xl leading-none tabular shrink-0">
-                  {String(i + 1).padStart(2, '0')}
-                </span>
+            {STEPS.map((step) => (
+              <li key={step.title} className="flex gap-4 md:gap-5 items-start bg-background/70 backdrop-blur-sm white-border border-foreground/15 p-4 md:p-6">
+                <Sparkle className="w-4 md:w-5 mt-1 shrink-0 text-primary" />
                 <div>
                   <h3 className="font-display uppercase text-lg md:text-2xl mb-1">{step.title}</h3>
                   <p className="text-sm md:text-base font-medium text-foreground/70 leading-relaxed">{step.copy}</p>
